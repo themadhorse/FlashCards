@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>FlashCard</title>
+</head>
+<body>
+    <h1>FlashCard Creator</h1>
+
+    <button class = "btnType1" id="addQuestion">Add Question</button><br>
+   
+    <form id="flashcardCreator">
+        <div id="creation">
+            <h2>Question</h2>
+            <textarea name="question" id="question" cols="50" rows="5" required></textarea><br>
+            <h2>Answer</h2>
+            <textarea name="answer" id="answer" cols="50" rows="5" required></textarea><br>
+            <button class="btnType1" type="submit">Save</button>
+    </div>
+    </form>
+    
+        <br>
+    <div id="flashcards">
+        <ul id="cards"></ul>
+        <!-- <div class="thecard">
+            <div class="front"></div>
+            <div class="back"></div>
+        </div> -->
+    </div>
+    <span></span>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-Flip/1.1.2/jquery.flip.min.js" integrity="sha512-fFCuqqfp+PTJ7OYFJVOsADHPgRz7VLaPc9uex6jEt6GbIanpRvoujyb+uwCTTk+FGBJkvvlsDLqccZABYha3IQ==" crossorigin="anonymous"></script>
+<script type="module" src="app.js"></script>
+</html>
